@@ -53,7 +53,7 @@
             // 
             this.lblGuardado.AutoSize = true;
             this.lblGuardado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGuardado.Location = new System.Drawing.Point(171, 245);
+            this.lblGuardado.Location = new System.Drawing.Point(132, 252);
             this.lblGuardado.Name = "lblGuardado";
             this.lblGuardado.Size = new System.Drawing.Size(81, 20);
             this.lblGuardado.TabIndex = 23;
