@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DCCBB34-53CE-4DAB-A119-405E98AEE49F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UNCDeporte</RootNamespace>
+    <AssemblyName>UNCDeporte</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Acerca de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Acerca de.Designer.cs">
+      <DependentUpon>Acerca de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\AgregarDeporteADeportistaInscripto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\AgregarDeporteADeportistaInscripto.Designer.cs">
+      <DependentUpon>AgregarDeporteADeportistaInscripto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\InscribirMasDeporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\InscribirMasDeporte.Designer.cs">
+      <DependentUpon>InscribirMasDeporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarLugarPractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarLugarPractica.designer.cs">
+      <DependentUpon>RegistrarLugarPractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarSector.Designer.cs">
+      <DependentUpon>RegistrarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarTipoSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarTipoSector.designer.cs">
+      <DependentUpon>RegistrarTipoSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\Registrar_Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\Registrar_Personal.Designer.cs">
+      <DependentUpon>Registrar_Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\AltaDeportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\AltaDeportista.Designer.cs">
+      <DependentUpon>AltaDeportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AsignarDeportesAProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AsignarDeportesAProfesor.Designer.cs">
+      <DependentUpon>AsignarDeportesAProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AsignarPerfilesDeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AsignarPerfilesDeUsuario.designer.cs">
+      <DependentUpon>AsignarPerfilesDeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConfirmarEstudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConfirmarEstudios.Designer.cs">
+      <DependentUpon>ConfirmarEstudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="ConsultarYEliminar\ConsultarProfesoresPorDeportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarProfesoresPorDeportes.Designer.cs">
+      <DependentUpon>ConsultarProfesoresPorDeportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarTipoSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarTipoSector.designer.cs">
+      <DependentUpon>ConsultarTipoSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarLugarPractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarLugarPractica.designer.cs">
+      <DependentUpon>ConsultarLugarPractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarLugarDePractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarLugarDePractica.designer.cs">
+      <DependentUpon>EliminarLugarDePractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarTipoSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarTipoSector.designer.cs">
+      <DependentUpon>EliminarTipoSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\InformeDeportesMasSolicitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\InformeDeportesMasSolicitados.Designer.cs">
+      <DependentUpon>InformeDeportesMasSolicitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\Registrar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\Registrar_Usuario.Designer.cs">
+      <DependentUpon>Registrar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\InformePreeinscripcionesResueltas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\InformePreeinscripcionesResueltas.Designer.cs">
+      <DependentUpon>InformePreeinscripcionesResueltas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuAdmin.designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar\ModificarLugarDePractica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar\ModificarLugarDePractica.designer.cs">
+      <DependentUpon>ModificarLugarDePractica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarProfesor.Designer.cs">
+      <DependentUpon>SeleccionarProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarUsuario.Designer.cs">
+      <DependentUpon>SeleccionarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\Clasificatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\Clasificatorio.Designer.cs">
+      <DependentUpon>Clasificatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\ConsultarEliminarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\ConsultarEliminarEvento.Designer.cs">
+      <DependentUpon>ConsultarEliminarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\ConsultarCancelarTorneos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\ConsultarCancelarTorneos.Designer.cs">
+      <DependentUpon>ConsultarCancelarTorneos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\Eliminatoria_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\Eliminatoria_8.Designer.cs">
+      <DependentUpon>Eliminatoria_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InscribirDeportistaConEstudiosAprobados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\InscribirDeportistaConEstudiosAprobados.Designer.cs">
+      <DependentUpon>InscribirDeportistaConEstudiosAprobados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Inscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Inscripcion.Designer.cs">
+      <DependentUpon>Inscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar\ModificarEstadodeEstudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar\ModificarEstadodeEstudios.Designer.cs">
+      <DependentUpon>ModificarEstadodeEstudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarBarrio.Designer.cs">
+      <DependentUpon>ConsultarBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarDeportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarDeportes.Designer.cs">
+      <DependentUpon>ConsultarDeportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarEliminarDeportistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarEliminarDeportistas.Designer.cs">
+      <DependentUpon>ConsultarEliminarDeportistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarPerfiles.Designer.cs">
+      <DependentUpon>ConsultarPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarPermisos.Designer.cs">
+      <DependentUpon>ConsultarPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EliminarPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EliminarPerfiles.designer.cs">
+      <DependentUpon>EliminarPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EliminarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EliminarPersonal.Designer.cs">
+      <DependentUpon>EliminarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GrillaDeportiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GrillaDeportiva.Designer.cs">
+      <DependentUpon>GrillaDeportiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar\ModificarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar\ModificarPerfil.designer.cs">
+      <DependentUpon>ModificarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar\ModificarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar\ModificarPersonal.Designer.cs">
+      <DependentUpon>ModificarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\NuevoPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\NuevoPerfil.Designer.cs">
+      <DependentUpon>NuevoPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\GenerarFixture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\GenerarFixture.Designer.cs">
+      <DependentUpon>GenerarFixture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\ConsultarRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\ConsultarRanking.Designer.cs">
+      <DependentUpon>ConsultarRanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\MensajesTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\MensajesTorneo.Designer.cs">
+      <DependentUpon>MensajesTorneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\ModificarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\ModificarEvento.Designer.cs">
+      <DependentUpon>ModificarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\ModificarTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\ModificarTorneo.Designer.cs">
+      <DependentUpon>ModificarTorneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarEvento.Designer.cs">
+      <DependentUpon>RegistrarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\RegistrarNuevoTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\RegistrarNuevoTorneo.Designer.cs">
+      <DependentUpon>RegistrarNuevoTorneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarDeportistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarDeportistas.Designer.cs">
+      <DependentUpon>SeleccionarDeportistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarInscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarInscripciones.Designer.cs">
+      <DependentUpon>ConsultarInscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarLocalidades.Designer.cs">
+      <DependentUpon>ConsultarLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarPersonal.Designer.cs">
+      <DependentUpon>ConsultarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarReservas.Designer.cs">
+      <DependentUpon>ConsultarReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConsultarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ConsultarSector.Designer.cs">
+      <DependentUpon>ConsultarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarYEliminar\ConsultarUsuarios.Designer.cs">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarBarrio.Designer.cs">
+      <DependentUpon>EliminarBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EliminarDeporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EliminarDeporte.Designer.cs">
+      <DependentUpon>EliminarDeporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EliminarInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EliminarInscripcion.Designer.cs">
+      <DependentUpon>EliminarInscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EliminarLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EliminarLocalidades.Designer.cs">
+      <DependentUpon>EliminarLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EliminarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EliminarSector.Designer.cs">
+      <DependentUpon>EliminarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar\ModificarInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar\ModificarInscripcion.Designer.cs">
+      <DependentUpon>ModificarInscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar\ModificarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar\ModificarSector.Designer.cs">
+      <DependentUpon>ModificarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarLocalidad.Designer.cs">
+      <DependentUpon>RegistrarLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProgramaActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ProgramaActividades.Designer.cs">
+      <DependentUpon>ProgramaActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RealizarInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\RealizarInscripcion.Designer.cs">
+      <DependentUpon>RealizarInscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarBarrio.Designer.cs">
+      <DependentUpon>RegistrarBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Altas\RegistrarDeportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Altas\RegistrarDeportes.Designer.cs">
+      <DependentUpon>RegistrarDeportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionarPre-Inscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionarPre-Inscripciones.Designer.cs">
+      <DependentUpon>GestionarPre-Inscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleccionar\SeleccionarPersonal.Designer.cs">
+      <DependentUpon>SeleccionarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="global.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Torneos\ReservaTorneo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\ReservaTorneo.designer.cs">
+      <DependentUpon>ReservaTorneo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\TieneFaseAnterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\TieneFaseAnterior.designer.cs">
+      <DependentUpon>TieneFaseAnterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Torneos\Todos contra Todos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Torneos\Todos contra Todos.Designer.cs">
+      <DependentUpon>Todos contra Todos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Acerca de.resx">
+      <DependentUpon>Acerca de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\AgregarDeporteADeportistaInscripto.resx">
+      <DependentUpon>AgregarDeporteADeportistaInscripto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\InscribirMasDeporte.resx">
+      <DependentUpon>InscribirMasDeporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarLugarPractica.resx">
+      <DependentUpon>RegistrarLugarPractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarSector.resx">
+      <DependentUpon>RegistrarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarTipoSector.resx">
+      <DependentUpon>RegistrarTipoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\Registrar_Personal.resx">
+      <DependentUpon>Registrar_Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\AltaDeportista.resx">
+      <DependentUpon>AltaDeportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AsignarDeportesAProfesor.resx">
+      <DependentUpon>AsignarDeportesAProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AsignarPerfilesDeUsuario.resx">
+      <DependentUpon>AsignarPerfilesDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConfirmarEstudios.resx">
+      <DependentUpon>ConfirmarEstudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarProfesoresPorDeportes.resx">
+      <DependentUpon>ConsultarProfesoresPorDeportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarTipoSector.resx">
+      <DependentUpon>ConsultarTipoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarLugarPractica.resx">
+      <DependentUpon>ConsultarLugarPractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarLugarDePractica.resx">
+      <DependentUpon>EliminarLugarDePractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarTipoSector.resx">
+      <DependentUpon>EliminarTipoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformeDeportesMasSolicitados.resx">
+      <DependentUpon>InformeDeportesMasSolicitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\Registrar_Usuario.resx">
+      <DependentUpon>Registrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformePreeinscripcionesResueltas.resx">
+      <DependentUpon>InformePreeinscripcionesResueltas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar\ModificarLugarDePractica.resx">
+      <DependentUpon>ModificarLugarDePractica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleccionar\SeleccionarProfesor.resx">
+      <DependentUpon>SeleccionarProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleccionar\SeleccionarUsuario.resx">
+      <DependentUpon>SeleccionarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\Clasificatorio.resx">
+      <DependentUpon>Clasificatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\ConsultarEliminarEvento.resx">
+      <DependentUpon>ConsultarEliminarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\ConsultarCancelarTorneos.resx">
+      <DependentUpon>ConsultarCancelarTorneos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\Eliminatoria_8.resx">
+      <DependentUpon>Eliminatoria_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\InscribirDeportistaConEstudiosAprobados.resx">
+      <DependentUpon>InscribirDeportistaConEstudiosAprobados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Inscripcion.resx">
+      <DependentUpon>Inscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar\ModificarEstadodeEstudios.resx">
+      <DependentUpon>ModificarEstadodeEstudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarBarrio.resx">
+      <DependentUpon>ConsultarBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarDeportes.resx">
+      <DependentUpon>ConsultarDeportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarEliminarDeportistas.resx">
+      <DependentUpon>ConsultarEliminarDeportistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarPerfiles.resx">
+      <DependentUpon>ConsultarPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarPermisos.resx">
+      <DependentUpon>ConsultarPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EliminarPerfiles.resx">
+      <DependentUpon>EliminarPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EliminarPersonal.resx">
+      <DependentUpon>EliminarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GrillaDeportiva.resx">
+      <DependentUpon>GrillaDeportiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar\ModificarPerfil.resx">
+      <DependentUpon>ModificarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar\ModificarPersonal.resx">
+      <DependentUpon>ModificarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\NuevoPerfil.resx">
+      <DependentUpon>NuevoPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\GenerarFixture.resx">
+      <DependentUpon>GenerarFixture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\ConsultarRanking.resx">
+      <DependentUpon>ConsultarRanking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\MensajesTorneo.resx">
+      <DependentUpon>MensajesTorneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\ModificarEvento.resx">
+      <DependentUpon>ModificarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\ModificarTorneo.resx">
+      <DependentUpon>ModificarTorneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarEvento.resx">
+      <DependentUpon>RegistrarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\RegistrarNuevoTorneo.resx">
+      <DependentUpon>RegistrarNuevoTorneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleccionar\SeleccionarDeportistas.resx">
+      <DependentUpon>SeleccionarDeportistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarInscripciones.resx">
+      <DependentUpon>ConsultarInscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarLocalidades.resx">
+      <DependentUpon>ConsultarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarPersonal.resx">
+      <DependentUpon>ConsultarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarReservas.resx">
+      <DependentUpon>ConsultarReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ConsultarSector.resx">
+      <DependentUpon>ConsultarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarYEliminar\ConsultarUsuarios.resx">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarBarrio.resx">
+      <DependentUpon>EliminarBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EliminarDeporte.resx">
+      <DependentUpon>EliminarDeporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EliminarInscripcion.resx">
+      <DependentUpon>EliminarInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EliminarLocalidades.resx">
+      <DependentUpon>EliminarLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EliminarSector.resx">
+      <DependentUpon>EliminarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar\ModificarInscripcion.resx">
+      <DependentUpon>ModificarInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar\ModificarSector.resx">
+      <DependentUpon>ModificarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarLocalidad.resx">
+      <DependentUpon>RegistrarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ProgramaActividades.resx">
+      <DependentUpon>ProgramaActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RealizarInscripcion.resx">
+      <DependentUpon>RealizarInscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarBarrio.resx">
+      <DependentUpon>RegistrarBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Altas\RegistrarDeportes.resx">
+      <DependentUpon>RegistrarDeportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionarPre-Inscripciones.resx">
+      <DependentUpon>GestionarPre-Inscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleccionar\SeleccionarPersonal.resx">
+      <DependentUpon>SeleccionarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Torneos\ReservaTorneo.resx">
+      <DependentUpon>ReservaTorneo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\TieneFaseAnterior.resx">
+      <DependentUpon>TieneFaseAnterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Torneos\Todos contra Todos.resx">
+      <DependentUpon>Todos contra Todos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unc1000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{D46E2115-2533-4936-9FD8-6328CD86FC2B}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{DBB209F6-9ED3-4990-B276-D159B6CD4C68}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapeoDeDatos\MapeoDeDatos.csproj">
+      <Project>{A6C7CCCD-2952-4858-BD9E-E179A9EA3C3A}</Project>
+      <Name>MapeoDeDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cara.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silueta_hombre.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captura-de-pantalla-2014-04-08-a-las-03-38-45-p-m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mp.master.cs" Inherits="mp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title> Dirección de Deportes de la UNC </title>
+        <link rel="Shortcut Icon" href="Imagenes/logo.ico" />
+        <link rel="Stylesheet" href="estilos.css" type="text/css" media="screen"/>            
+    </head>
+
+    <body class="fondo">
+        <form runat="server" visible= "true">            
+            <div class="cabecera">   
+                <div> 
+                    <br/>
+                    <br/> 
+                </div>        
+                  
+                <div class="c1">
+                    Dirección de Deportes
+                </div>      
+                              
+                <div class="c2">                    
+                </div>     
+                           
+                <div class="c3">
+                    <br/>
+                    Universidad <br/>
+                    Nacional <br/>
+                    de Córdoba
+                </div>
+
+                <div class="c4">                    
+                </div>
+
+                <div class="c5">
+                    <br/>
+                    Secretaría <br/>
+                    de Asuntos <br/>
+                    Estudiantiles
+                </div> 
+
+                <div class="c6">
+                </div>                                                                                                                                                                   
+            </div> 
+
+            <div class="sesion">      
+                <asp:Button runat="server" id="btnIniciarSesion" text="+ Iniciar Sesión" 
+                    CssClass="s1" onclick="btnIniciarSesion_Click" CausesValidation="False"/>
+                <asp:Label runat="server" id="lblSesion" CssClass="s2" Text=""/> 
+                <asp:Button runat="server" id="btnCerrarSesion"  text="- Cerrar Sesión" CssClass="s3" onclick="btnCerrarSesion_Click" />                
+            </div>
+           
+            <div class="menu">
+                <div>
+                    <br/>
+                    <br/>
+                </div>
+
+                <asp:Button runat="server" id="btnPrincipal" Text="AutoGestion" CssClass="m" 
+                    onclick="btnPrincipal_Click" CausesValidation="False"/>
+                <asp:Button runat="server" id="btnCarnet" Text="Solicitar Preinscripcion" 
+                    CssClass="m" onclick="btnCarnet_Click1" CausesValidation="False"/>
+                <asp:Button runat="server" id="btnCanchas" Text="Consultar Estado" CssClass="m" 
+                    onclick="btnCanchas_Click" CausesValidation="False"/>
+                               
+                <asp:Button runat="server" id="btnEventos" Text="Eventos" CssClass="m" 
+                    onclick="btnEventos_Click" CausesValidation="False"/>
+                               
+                <br />
+                               
+                <asp:Button runat="server" id="btnTorneos" Text="Torneos" CssClass="m" 
+                    onclick="btnTorneos_Click" CausesValidation="False"/>
+                               
+                <br />
+                               
+                <asp:Button runat="server" id="btnCet" Text="Centro de Estudiantes" CssClass="m" 
+                    onclick="btnCet_Click" CausesValidation="False"/>
+                               
+            </div> 
+                
+            <asp:ContentPlaceHolder runat="server" id="contenido"/> 
+
+            <div class="marca">
+            </div>
+
+            <div class="pie">
+                <div>                    
+                    <blockquote>
+                    Dirección de Deportes <br/>
+                    Avenida Valparaíso s/n, Ciudad Universitaria <br/>
+                    Teléfono: (54 351) 433-4113. <br/>
+                    Correo electrónico: comunicacion@deportes.unc.edu.ar <br/>   
+                    </blockquote>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
