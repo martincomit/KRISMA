@@ -1,0 +1,19 @@
+perfiles todo terminar, el modificar no anda, el de alta anda pero no tiene todas las ventanas ultimas actualizadas
+
+si saco caract_fijo y cel, el estado pasa a 25 en vez de 27 en la columna, en la grilla de consultar preinscripciones, ya q el estado esta en la col 27, y 25 sin esos dos campos
+
+salir y cruz ver cargar grilla sacar de registrar lugar practica de anibal
+
+turnos medicos fecha registrar en inscripcion
+
+error al traer foto, condicion y becado en consultar deportista(web y ver si funca en escritorio)
+
+ocultar todos los campos de grilla q no se usan
+
+que guarde foto de la web
+
+arreglar horarios de consultar web, q muestre bien, estetica
+
+plan de proyecto, lugar aparte plan de riesgos
+
+falta control de sessiones para web.
